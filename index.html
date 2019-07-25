@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Minesweeper</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <main>
+    <h1>Minesweeper</h1>
+    <div class="board">
+      <div class="cell" id="00" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="01" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="02" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="03" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="04" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="05" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="06" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="07" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="08" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="09" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+
+      <div class="cell" id="10" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="11" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="12" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="13" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="14" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="15" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="16" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="17" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="18" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="19" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+
+      <div class="cell" id="20" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="21" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="22" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="23" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="24" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="25" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="26" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="27" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="28" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="29" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+
+      <div class="cell" id="30" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="31" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="32" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="33" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="34" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="35" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="36" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="37" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="38" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="39" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+
+      <div class="cell" id="40" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="41" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="42" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="43" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="44" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="45" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="46" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="47" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="48" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="49" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+
+      <div class="cell" id="50" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="51" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="52" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="53" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="54" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="55" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="56" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="57" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="58" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="59" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+
+      <div class="cell" id="60" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="61" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="62" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="63" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="64" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="65" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="66" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="67" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="68" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="69" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+
+      <div class="cell" id="70" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="71" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="72" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="73" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="74" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="75" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="76" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="77" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="78" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="79" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+
+      <div class="cell" id="80" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="81" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="82" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="83" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="84" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="85" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="86" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="87" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="88" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="89" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+
+      <div class="cell" id="90" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="91" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="92" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="93" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="94" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="95" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="96" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="97" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="98" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+      <div class="cell" id="99" style="color: black; background-image: radial-gradient(rgb(255, 255, 255), rgb(230, 230, 230));"></div>
+    </div>
+    <br>
+    <strong>
+      <div id="messageBox" style="color: rgb(255, 255, 153); background-color: rgb(102, 178, 255);">Make a Move!</div>
+    </strong>
+    <br>
+    <div class="instructions">
+      <strong>
+        "Left Click: Open Cell"
+        <br>
+        "Right Click: Place Flag"
+        <br>
+        "Ctrl + Left Click: Open Adjacent Non-Flagged Cells"
+      </strong>
+    </div>
+    <br>
+    <div class="controls">
+      <div class="user-display" id="time"></div>
+      <button type="button" name="button" class="button" id="new-game-button">New Game</button>
+      <form action="https://mitchum.blog/sneaky-subscribe" style="display: inline-block;"></form>
+      <div class="user-display" id="mines-remaining"></div>
+    </div>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
